@@ -58,14 +58,14 @@ cap = cv2.VideoCapture(0)
 
 # Harassment detection parameters
 harassment_detected = False
-frame_threshold = 5  # Faster detection
-aggressive_frames = 0  # Counter for aggressive behavior frames
-last_alarm_time = 0  # Timestamp to prevent repeated alarms
-last_aggression_time = 0  # Track last detected aggression frame
-CONFIDENCE_THRESHOLD = 0.4  #  Reduced from 0.5 to detect more hands
-COOLDOWN_TIME = 5  #  Reduced from 10 to allow faster retrigger
-AGGRESSION_HOLD_TIME = 2.5 #  Reduced from 3 for faster detection
-HAND_RAISE_THRESHOLD = 20  #  Reduced from 50 to allow more flexibility
+frame_threshold = 5  
+aggressive_frames = 0 
+last_alarm_time = 0  
+last_aggression_time = 0 
+CONFIDENCE_THRESHOLD = 0.4  
+COOLDOWN_TIME = 5 
+AGGRESSION_HOLD_TIME = 2.5 
+HAND_RAISE_THRESHOLD = 20  
 
 print(" Monitoring harassment. Press 'q' to exit.")
 
