@@ -21,14 +21,14 @@ model = YOLO("yolov8n-pose.pt")  # Using YOLOv8 Pose model
 
 # Email function
 def send_email(detected_location, event_type):
-    sender_email = "paramsingh1810@gmail.com"
-    receiver_email = "harshitthakur2325@gmail.com"
-    password = "nnid fwzo iloq ycmo"
+    sender_email = "XYZ@gmail.com"
+    receiver_email = "XYZ@gmail.com"
+    password = "nXYZ"
 
     msg = MIMEMultipart()
     msg["From"] = sender_email
     msg["To"] = receiver_email
-    msg["hassasment has been detected near khare's kitchen"] = f"🚨 Alert: {event_type}"
+    msg["hassasment has been detected "] = f"🚨 Alert: {event_type}"
 
     body = f"🚨 Harassment detected at {detected_location}."
     msg.attach(MIMEText(body, "plain"))
